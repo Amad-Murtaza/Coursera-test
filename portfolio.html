@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      body{
+    font-size: 16px;
+    background-color: white;
+  }
+  #header-nav{
+    background-color: black;
+    border-radius: 0;
+    border: 0;
+  }
+  .navbar-brand{
+    padding-top: 25px;
+  }
+  .navbar-brand h1{
+    font-family: 'lora', serif;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none
+  }
+  .navbar-brand p{
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+  }
+  .navbar-brand p span {
+    vertical-align: middle;
+  }
+  #nav-list{
+    margin-top: 10px;
+  }
+  #nav-list a{
+    color: #951C49;
+    text-align: center;
+  }
+  #nav-list a:hover{
+    background: #e7e7e7;
+  }
+  #nav-list a span{
+    font-size: 1.8em;
+  }
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #61122f;
+  }
+  .navbar-header button.navbar-toggle{
+    clear: both;
+    margin-top: -30px;
+  }
+  #menu-tile, #specials-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+  }
+  #menu-tile:hover, #specials-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+  }
+  #menu-tile{
+    background: url(graphic.jpg)no-repeat;
+    background-position: center;
+  }
+  #specials-tile{
+    background: url(web.jpg)no-repeat;
+    background-position: center;
+  }
+  #menu-tile span, #specials-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+  }
+  @media (min-width: 1200px){
+    .container .jumbotron {
+      background: url('pic.jpg')no-repeat;
+    height: 675px;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px){
+    .container .jumbotron {
+      background: url('pic.jpg')no-repeat;
+    height: 558px;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+    }
+  }
+  @media (min-width 768px) and (max-width: 991px){
+    .container .jumbotron {
+      background: url('pic.jpg')no-repeat;
+    height: 432px;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+    }
+  }
+  @media (max-width: 767px){
+    .navbar-brand{
+      padding-top: 10px;
+      height: 90px;
+    }
+    .navbar-brand h1{
+      padding-top: 15px;
+      font-size: 5vw;
+    }
+    .navbar-brand p{
+      text-transform: uppercase;
+      font-size: .6em;
+      margin-top: 13px;
+    }
+    #collapsable-nav a{
+      font-size: 1.2em;
+    }
+    #collapsable-nav a span{
+      font-size: 1em;
+      margin-right: 5px;
+    }
+    .container .jumbotron{
+      margin-top: 30px;
+      padding: 0;
+      box-shadow: 0 0 50px #3f0c1f;
+      border: 2px solid #3f0c1f;
+    }
+    #xs-deliver{
+      margin-top: 5px;
+      font-size: .7em;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .container .jumbotron{
+      margin-top: 30px;
+      padding: 0;
+    }
+    #menu-tile, #specials-tile{
+      width: 360px;
+      margin: 0 auto 15px;
+    }
+  }
+  @media (max-width: 479px){
+    #menu-tile, #specials-tile{
+      width: 280px;
+      margin: 0 auto 15px;
+    }
+  }
+
+    </style>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Portfolio</h1></a>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+           <li>
+             <a href="Home.html">
+               <span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a>
+           </li>
+           <li>
+             <a href="#">
+               <span class="glyphicon glyphicon-user"></span><br class="hidden-xs">About</a>
+           </li>
+           <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-list-alt"></span><br class="hidden-xs">Services</a>
+          </li>
+           <li>
+             <a href="#">
+               <span class="glyphicon glyphicon-phone-alt"></span><br class="hidden-xs"> Contact</a>
+           </li>
+         </ul><!-- #nav-list -->
+       </div>
+      </div>
+    </nav>
+  </header>
+  <div id="main-content" class="container">
+    <div class="jumbotron">
+      <img src="mypic-01.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
+    </div>
+    <div id="home-tiles" class="row">
+      <h1>Services</h1>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="menu-categories.html"><div id="menu-tile"><span>Graphic Designing</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="single-category.html"><div id="specials-tile"><span>Web Desigining</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
